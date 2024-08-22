@@ -1,0 +1,36 @@
+first run these 2 commands in the terminal
+npm install -D tailwindcss (do this only whenn the node package is initialized)
+npx tailwindcss init
+
+add this in the index.css 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ for the above three steps it will be error go to settings and search by ctrl + , and search unkown ignore it
+
+open the file tailwind.config.js in the project and replace the content with this:
+    content: [
+    "place the path of the main file here",  // Ensure this matches the structure of your project
+  ]
+  config me ye bhi btana ha ka content kaha likh rahe ho 
+  like this:
+      content: [
+    "./dist/index.html",  // Ensure this matches the structure of your project
+  ],
+  use * instead of the index it will be included to all the files
+
+Run this command on the terminal"
+  npx tailwindcss -i ./src/input.css -o ./src/output.css
+  -i means where is the input file present and -o where you need the output file the above output file contains alot of css in it and which css you need it includes into your html
+  and after that you have to run the above command again
+
+  for this use this command
+        npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+        when the above command is used there is no need to run again and again
+
+
+learn the core-concepts:
+  
+
+  Hover sa peecha jitni marzi classes likhe peecha hover: likhna pare ga
